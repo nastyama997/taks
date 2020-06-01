@@ -1,0 +1,227 @@
+body {
+  background-color: #150433;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.menu__title {
+  color: aliceblue;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+.menu__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.menu__item {
+  display: block;
+  padding-right: 4%;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.menu__link {
+  text-decoration: none;
+  color: aliceblue;
+}
+.menu__link:hover {
+  background-color: #727272;
+}
+
+.block {
+  display: block;
+  justify-content: space-between;
+
+  padding: 30px;
+  margin: 0;
+}
+.block__text {
+  color: aliceblue;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+.block__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.block__button {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 4%; 
+}
+.far {
+  font-size: 30px;
+  margin-right: 6px;
+}
+.button__text {
+  vertical-align: middle;
+  text-decoration: none;
+  color: #000;
+}
+.block__button--beautiful {
+  margin: 0;
+  transition: All 0.5s ease;
+}
+.block__button--beautiful:hover {
+  width: 200px;
+  font-size: 23px;
+}
+.block__button--good {
+  color: #000;
+  transition: All 0.5s ease;
+}
+.block__button--good:hover {
+  background-color: rgb(39, 99, 99);
+  color: #000;
+}
+
+.block__button--fine {
+  position: relative;
+  transform: translateZ(0);
+  transition: color 1000ms;
+}
+.block__button--fine:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(39, 99, 99);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition: 300ms ease-out;
+}
+.block__button--fine:hover:before {
+  transform: scaleX(1);
+}
+.block__button--sad {
+  position: relative;
+  transform: translateZ(0);
+  transition: color 1000ms;
+}
+.block__button--sad:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(39, 99, 99);
+  transform: scaleY(0);
+  transform-origin: 50% 0%;
+  transition-property: transform;
+  transition: 300ms ease-out;
+}
+.block__button--sad:hover:before {
+  transform: scaleY(1);
+}
+.block__button--bad {
+  position: relative;
+  transition: color 500ms;
+  transform: translateZ(0);
+}
+.block__button--bad:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background: rgb(39, 99, 99);
+  transform: scaleX(0);
+  transition-property: transform;
+  transform-origin: 0% 50%;
+  transition: 300ms ease-out;
+}
+.block__button--bad:hover:before {
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.block__button--romantic {
+  background-color: rgb(39, 99, 99) !important;
+  position: relative;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition: color 300ms;
+}
+.block__button--romantic:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  transform: scale(1);
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition: 300ms ease-out;
+}
+.block__button--romantic:hover:before {
+  transform: scale(0);
+}
+@media (max-width: 1180px){
+  .block__button{
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 740px){
+  .block__button{
+    margin-left: 20px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  .menu__title {
+    align-self: center;
+  }
+  .menu__nav {
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+  .menu__item {
+    margin: 2%;
+    padding: 0;
+  }
+
+  .block__text {
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 40px;
+    justify-content: center;
+  }
+  .block__buttons {
+    flex-direction: column;
+    align-self: center;
+  }
+  .block__button {
+    margin: 5px;
+    width: 200px;
+  }
+}

@@ -1,0 +1,127 @@
+body {
+  background-color: #150433;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.menu__title {
+  color: aliceblue;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.menu__item {
+  display: block;
+  padding: 0 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.menu__link {
+  text-decoration: none;
+  color: aliceblue;
+}
+.menu__link:hover {
+  background-color: #727272;
+}
+.block {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  margin: 0;
+}
+.block__text {
+  color: aliceblue;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.block__link {
+  vertical-align: middle;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.block__link--cheburashka:hover {
+  background: rgb(59, 61, 192);
+}
+.block__link--winnie:hover {
+  color: orange;
+}
+.block__link--clacker:hover {
+  font-size: 33px;
+  text-decoration: underline;
+}
+.block__link--brownie{
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.block__link--brownie:hover {
+  background-size: 100% 2px;
+}
+.block__link--fyodor {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.block__link--fyodor:hover {
+  background-size: 100% 2px;
+}
+.block__link--carlsonson:hover {
+  border: 1px solid red;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .menu__title {
+    flex-direction: column;
+  }
+  .menu__nav {
+    flex-direction: column;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+  .menu__item {
+    margin: 5px;
+    padding: 0;
+  }
+  .block__text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 40px;
+    margin-left: 30px;
+    margin-left: 30px;
+  }
+  .links {
+    flex-direction: column;
+    align-self: center;
+  }
+  .link__item {
+    margin: 15px;
+  }
+}

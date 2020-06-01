@@ -1,0 +1,135 @@
+::-webkit-input-placeholder {
+  color: #9b94a3;
+  opacity: 0.5;
+  font-size: 16.2px;
+  line-height: 163.35%;
+}
+::-moz-placeholder {
+  color: #9b94a3;
+  opacity: 0.5;
+  font-size: 16.2px;
+  line-height: 163.35%;
+}
+:-moz-placeholder {
+  color: #9b94a3;
+  opacity: 0.5;
+  font-size: 16.2px;
+  line-height: 163.35%;
+}
+:-ms-input-placeholder {
+  color: #9b94a3;
+  opacity: 0.5;
+  font-size: 16.2px;
+  line-height: 163.35%;
+}
+body {
+  margin: 0;
+  background: #150433;
+}
+
+.container {
+  max-width: 950px;
+  min-height: 486px;
+  padding: 108px 98px;
+  padding-bottom: 126px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.header,
+.about__title,
+.about__input,
+.about__button {
+  font-family: Open Sans;
+  font-style: normal;
+  color: #fcfcfc;
+}
+.header {
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  margin-bottom: 69px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about__title {
+  font-weight: bold;
+  font-size: 12.6px;
+  line-height: 207.9%;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.about__input {
+  width: 362px;
+  height: 54px;
+  margin-bottom: 32px;
+  padding-left: 18px;
+  background: #fcfcfc;
+  border: 1px solid #f4f4ed;
+  box-sizing: border-box;
+  font-size: 16.2px;
+  line-height: 163.35%;
+  color: rgb(68, 68, 68);
+  outline: none;
+}
+.about__input--message {
+  width: 558px;
+  height: 234px;
+  margin-bottom: 49px;
+  padding: 34px 54px;
+  resize: none;
+}
+.about__button {
+  width: 215px;
+  height: 54px;
+  background: #f61067;
+  border: #f61067;
+  border-radius: 36px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  cursor: pointer;
+}
+.about__button:active,
+.about__button:focus {
+  outline: none;
+}
+@media (max-width: 976px) {
+  .container {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 665px) {
+  .container {
+    position: absolute;
+    flex-direction: column;
+  }
+  .about {
+    width: 100%;
+  }
+  .about__input--message {
+    max-width: 558px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .about {
+    width: 100%;
+  }
+
+  .about__input {
+    max-width: 362px;
+    width: 100%;
+  }
+}
